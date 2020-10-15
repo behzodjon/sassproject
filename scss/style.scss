@@ -1,0 +1,129 @@
+@import 'config';
+@import 'responsive';
+
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+img{
+    width: 100%;
+    height: auto;
+
+}
+
+//navbar
+.navbar{
+display: flex;
+align-items: center;
+justify-content: space-around;
+box-shadow: 0px 1px 10px #999;
+z-index: 1;
+width: 100%;
+top: 0;
+opacity: 0.9;
+position: relative;
+
+
+.logo-section{
+display: flex;
+}
+.logo-text{
+    margin-top: 38px;
+    margin-bottom: 39px;
+    color:   #141E32;
+    font-weight: bold;
+}
+}
+.logo{
+    margin: 22px 24px 22px 0;
+}
+.btn{
+    padding:23px 21px 21px 23px;
+    background-color: $light-orange;
+    outline: none;
+    border: none;
+    color: $light-color;
+    font-weight: 700;
+    font-size: 18px;
+    &:hover{
+        background-color: $dark-orange;
+    }
+    @include respond(tablet) {
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+  @include respond(mobile) {
+    font-weight: 150;
+    font-size: 12px;
+    }
+
+}
+
+//Landing
+.landing{
+    &-inner{
+        color: black;
+        height: 100%;
+        display: flex;
+        width: 100%;
+    }
+    .landing-inner{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    .inner-leftside{
+        min-height:100vh;
+        width: 50%;
+        background-color: #3D9776;
+        h1{
+            color: #fff;
+        }
+    }
+    .inner-rightside{
+        min-height:100vh;
+        width:50%;
+        background-color: #ffffff;
+        h1{
+            color:  #3D9776;
+        }
+    }
+  .hero-image{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      display: flex;
+  }
+ 
+
+}
+.content{
+    max-width: 550px;
+    margin-top: 50px;
+    h1{
+        text-align: center;
+    }
+}
+.leftside{
+    margin-left:auto;
+}
+.svg__container{
+    svg{
+      margin:20px auto 0px auto;
+      display:block
+    }}
+    .left_svg{
+        opacity:0.1
+      }
+
+
